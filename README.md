@@ -24,8 +24,8 @@ have any problem with the reservation. All data is stored in the database.
 
 **HOW TO NAVIGATE 
 
-1)First create a new account (Register)
-  Now you can upload your own room. Also you can see rooms from other users and book the date you want.
+Create a new account (Register)
+Now you can upload your own room. Also you can see rooms from other users and book the date you want.
 
 
   -----------------------------------------------------------------------------------------------------------------------------------------
