@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Booking.Models.Rooms>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h3 style="text-align: center;">All Rooms</h3>
+
+<hr size="8" />
+
+<div class="Sortby">
+    <div>
+        <form asp-controller="Rooms" asp-action="Index" method="get">
+            <label for="sortOrder" style="font-weight: bold;">Sort by:</label>
+            <select id="sortOrder" name="sortOrder" class="select-style" onchange="submitForm()">
+                <option value="regular">Default</option>
+                <option value="price_asc">Price low to high</option>
+                <option value="price_desc">Price high to low</option>
+            </select>
+
+            <button type="submit" class="submit-button">Apply</button>
+        </form>
+    </div>
+</div>
+<br/>
+<div class="room-container">
+   
+
+    @foreach (var item in Model)
+    {
+        if (!string.IsNullOrEmpty(item.CoverPhotoFileName))
+        {
+            <div class="room-item">
+                <img src="~/uploads/cover/@item.CoverPhotoFileName" alt="Room Photo" class="img-thumbnail" />
+
+                <div class="room-details">
+                    <h4>@item.Name</h4>
+                    <p>@item.City</p>
+                    <p>@item.Price$</p>
+
+                    <a asp-action="Details" class="btn btn-primary" asp-route-id="@item.Id">Details</a>
+                </div>
+            </div>
+        }
+    }
+</div>

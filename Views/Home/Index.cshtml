@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookingWeb</title>
+
+    </head>
+    <body>
+        <header>
+        <h1 style="text-align:center;">BookingWeb</h1>
+            <p>Find the perfect place to stay for your next adventure</p>
+        </header>
+
+        <section>
+            <h2>Welcome to BookingWeb</h2>
+            <p>Discover a variety of houses available for booking. Whether you're planning a vacation or a business trip, we have the perfect accommodation for you.</p>
+            <p>Start your journey by exploring our listings and find the ideal place to stay.</p>
+            <a href="@Url.Action("Index", "Rooms")" class="cta-button">Explore Rooms</a>
+        </section>
+         <section>
+        <h2 style="text-align:center;">Upload Your Room</h2>
+             <p>Are you a property owner? Share your space with travelers by uploading your room. It's easy and quick!</p>
+             <a href="@Url.Action("Create", "Rooms")" class="cta-button">Room Upload</a>
+         </section>
+
+        <section id="your-booking-section">
+        <h2 style="text-align:center;">Contact Us</h2>
+        <p>Have questions or need assistance? Contact our support team, and we'll be happy to help you.</p>
+        <a href="@Url.Action("Privacy", "Home")" class="cta-button">Contact Us</a>
+        </section>
+
+    </body>
+</html>
+

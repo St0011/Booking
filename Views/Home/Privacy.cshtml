@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+
+<section class="contact">
+    <h2 style="text-align:center;">Contact Us</h2>
+
+    <form method="post" action="/Contact/Index">
+        <div class="naem">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <br />
+            <br />
+            <input type="email" name="OwnerEmail" placeholder="Your Email" required>
+        </div>
+        <br />
+        <hr size="6">
+        <div class="textarea-container">
+            <textarea name="Description" placeholder="Your Message" rows="10" class="custom-textarea" required></textarea>
+        </div>
+        </br>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+</section>

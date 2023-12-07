@@ -1,0 +1,40 @@
+﻿@model Booking.Models.BookRooms
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 style="text-align: center;">Select Date</h1>
+<hr size="8" />
+<div class="IndexBook">
+    <dl class="row">
+        <form asp-controller="BookRooms" asp-action="BookNow" method="post">
+            <input type="hidden" asp-for="Id" />
+
+            <div class="form-group">
+                <label asp-for="CheckInDate" class="control-label"></label>
+                <input asp-for="CheckInDate" class="form-control datepicker" min="@DateTime.Now.ToString("yyyy-MM-dd")" />
+                <span asp-validation-for="CheckInDate" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="CheckOutDate" class="control-label"></label>
+                <input asp-for="CheckOutDate" class="form-control datepicker" min="@DateTime.Now.ToString("yyyy-MM-dd")" />
+                <span asp-validation-for="CheckOutDate" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="RoomsId" class="control-label"></label>
+                <select asp-for="RoomsId" asp-items="@(new SelectList(ViewBag.Rooms, "Value", "Text"))" class="form-control">
+                    <option value="Select a Room">Select a Room</option>
+                </select>
+                <span asp-validation-for="RoomsId" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="BookBtn">Book Now</button>
+        </form>
+    </dl>
+</div>
+
+
+
