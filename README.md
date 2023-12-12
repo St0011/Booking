@@ -5,6 +5,8 @@ Prospective customers can seamlessly register and, upon finding an available roo
 reserve it for their desired dates. The platform also facilitates communication through a user-friendly contact form, 
 allowing customers to address any reservation-related concerns via email.
 All relevant data is meticulously stored in a secure and efficient database.
+Key Technologies:
+Visual Studio, .NET Framework, HTML, CSS, Javascript, C#
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------
