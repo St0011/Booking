@@ -1,9 +1,10 @@
 # Booking
 
-In this Website users register and upload their own room.In addition, 
-customers register and if the room is available they book it on the date 
-they want. Also customers can send an email to the contact form if they 
-have any problem with the reservation. All data is stored in the database.
+This Website empowers users to effortlessly register and showcase their available rooms. 
+Prospective customers can seamlessly register and, upon finding an available room,
+reserve it for their desired dates. The platform also facilitates communication through a user-friendly contact form, 
+allowing customers to address any reservation-related concerns via email.
+All relevant data is meticulously stored in a secure and efficient database.
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------
