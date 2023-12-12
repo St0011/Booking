@@ -1,4 +1,4 @@
-# Booking
+# BookingWeb
 
 This Website empowers users to effortlessly register and showcase their available rooms. 
 Prospective customers can seamlessly register and, upon finding an available room,
