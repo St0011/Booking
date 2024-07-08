@@ -13,13 +13,7 @@ Visual Studio, .NET Framework, HTML, CSS, Javascript, C#.
 
 
 
-**HOW TO RUN THE APP
 
-1)Download the Zip File
-
-2)Open Visual Studio
-
-3)Open a project or solution and select the Booking.sln
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------
